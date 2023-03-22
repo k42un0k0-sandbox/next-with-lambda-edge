@@ -9,7 +9,7 @@ export class CdkStack extends cdk.Stack {
     super(scope, id, props);
     new s3.Bucket(this, 'FirstEdgeBucket', {
       removalPolicy: cdk.RemovalPolicy.DESTROY,
-      bucketName:"FirstEdgeBucket"
+      bucketName:"first-edge-bucket"
     });
 
     new lambda.Function(this,"FirstEdgeFunction",{
