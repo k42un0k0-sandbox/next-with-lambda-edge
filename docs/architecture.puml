@@ -1,0 +1,8 @@
+@startuml
+queue "Lambda@edge" as l
+folder S3 as s
+cloud CloudFormation as c
+
+c --> l
+c -> s
+@enduml
